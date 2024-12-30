@@ -86,9 +86,9 @@ fun MainScreen() {
             Button(
                 onClick = {
                     val intent = Intent(context, UserInfoActivity::class.java)
-                        intent.putExtra("UserName", user.name.toString())
-                        intent.putExtra("UserNum", user.phoneNum.toString())
-                        intent.putExtra("UserEmail", user.email.toString())
+                    intent.putExtra("UserName", user.name.toString())
+                    intent.putExtra("UserNum", user.phoneNum.toString())
+                    intent.putExtra("UserEmail", user.email.toString())
 
                     context.startActivity(intent)
                 },
